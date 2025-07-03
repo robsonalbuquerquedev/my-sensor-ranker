@@ -1,37 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 My Sensor Ranker
 
-## Getting Started
+Sistema web moderno em **Next.js** para ranquear, comparar e avaliar sensores de temperatura. Ideal para makers, estudantes, professores ou engenheiros que precisam encontrar a melhor alternativa ao clássico **DS18B20**.
 
-First, run the development server:
+---
+
+## 📸 Funcionalidades
+
+✅ Catálogo visual de sensores  
+✅ Avaliação por estrelas  
+✅ Tabela comparativa lado a lado  
+✅ Salvamento no navegador com localStorage  
+✅ Interface responsiva e amigável com Tailwind CSS  
+✅ Tecnologias aplicadas com boas práticas de UX/UI
+
+---
+
+## 🧪 Sensores já cadastrados
+
+- DHT22 (AM2302)
+- AM2301
+- TMP36
+- Thermocouple (K-type)
+- LM35 (versão estanque)
+- **E muitos outros podem ser adicionados!**
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Context API](https://react.dev/learn/passing-data-deeply-with-context) para gerenciamento de comparação
+- `localStorage` para persistência
+- `TypeScript` para tipagem segura
+
+---
+
+## 📦 Instalação local
 
 ```bash
+# Clone o repositório
+git clone https://github.com/robsonalbuquerquedev/my-sensor-ranker.git
+
+# Acesse o diretório
+cd my-sensor-ranker
+
+# Instale as dependências
+npm install
+
+# Rode a aplicação
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000 para visualizar no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contribuindo
 
-## Learn More
+Quer adicionar um novo sensor ao sistema? Basta editar o arquivo:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+// src/data/sensors.ts
+export const sensors: Sensor[] = [ ... ];
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ou envie uma pull request com melhorias de estilo, layout ou dados!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este projeto é open-source e está licenciado sob os termos da [LICENSE](LICENSE).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# my-sensor-ranker
+---
+
+### 👨‍💻 Desenvolvido por Robson Albuquerque
+
+---
