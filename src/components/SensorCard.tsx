@@ -42,6 +42,17 @@ export default function SensorCard({ sensor }: SensorCardProps) {
                 <strong>Como usar:</strong> {sensor.usage}
             </p>
 
+            <p className="text-sm font-medium text-green-600 mb-2">💰 {sensor.price}</p>
+
+            <a
+                href={sensor.buyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-1 px-4 py-1.5 text-sm font-medium text-white bg-green-600 rounded-full hover:bg-green-700 transition-colors cursor-pointer"
+            >
+                Comprar
+            </a>
+
             <button
                 onClick={() => toggleCompare(sensor)}
                 className={`mt-3 px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-sm border

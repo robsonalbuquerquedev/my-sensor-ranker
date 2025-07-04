@@ -11,7 +11,6 @@ export default function Home() {
       <p className="text-gray-700 mb-6">
         Compare, avalie e descubra sensores de temperatura similares ao DS18B20.
       </p>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {sensors.map((sensor) => (
           <SensorCard key={sensor.id} sensor={sensor} />
